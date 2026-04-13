@@ -11,7 +11,6 @@ function Todo() {
       <AddTaskForm />
       <SearchTaskForm />
       <TodoInfo />
-
       <TodoList />
     </div>
   );
