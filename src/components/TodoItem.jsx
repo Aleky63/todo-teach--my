@@ -1,4 +1,6 @@
-const TodoItem = () => {
+const TodoItem = (props) => {
+  const { title, isDone } = props;
+
   return (
     <li className="todo__item todo-item">
       <input
