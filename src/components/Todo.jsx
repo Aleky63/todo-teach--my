@@ -6,7 +6,8 @@ import TodoList from "./TodoList";
 function Todo() {
   const tasks = [
     { id: "task-1", title: "Купить молоко", isDone: false },
-    { id: "task-2", title: "Купить водку", isDone: true },
+    { id: "task-2", title: "Купить водку", isDone: false },
+    { id: "task-3", title: "Купить хлеб", isDone: true },
   ];
   return (
     <div className="todo">
