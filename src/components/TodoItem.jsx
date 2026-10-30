@@ -15,7 +15,6 @@ const TodoItem = (props) => {
         id={id}
         type="checkbox"
         checked={isDone}
-        readOnly
         onChange={({ target }) => onTaskCompleteChange(id, target.checked)}
       />
       <label className="todo-item__label" htmlFor={id}>
@@ -23,6 +22,7 @@ const TodoItem = (props) => {
       </label>
       <button
         className="todo-item__delete-button"
+        type="button"
         aria-label="Delete"
         title="Delete"
         onClick={() => onDeleteTaskButtonClick(id)}

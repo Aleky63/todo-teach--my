@@ -2,10 +2,9 @@ import TodoItem from "./TodoItem";
 
 const TodoList = (props) => {
   const { tasks = [], onDeleteTaskButtonClick, onTaskCompleteChange } = props;
-  const hasTasks = true;
 
-  if (!hasTasks) {
-    return <div className="todo__empty-message"></div>;
+  if (tasks.length === 0) {
+    return <div className="todo__empty-message">No tasks to display.</div>;
   }
 
   return (
@@ -13,6 +12,7 @@ const TodoList = (props) => {
       {tasks.map((task) => (
         <TodoItem
           className="todo__item"
+          id={task.id}
           title={task.title}
           isDone={task.isDone}
           onDeleteTaskButtonClick={onDeleteTaskButtonClick}
