@@ -3,12 +3,12 @@
   --color-black: #000000;
 
   --color-dark-1: #1E1E1E;
-  --color-dark-2: #2C2C2C;
+  --color-dark-2: #553939;
 
   --color-gray-1: #F5F5F5;
   --color-gray-2: #D9D9D9;
-  --color-gray-3: #B3B3B3;
-  --color-gray-4: #757576;
+  --color-gray-3: #a5a0a0;
+  --color-gray-4: #84848a;
 
   --border: 1px solid var(--color-gray-2);
   --border-radius: 8px;
